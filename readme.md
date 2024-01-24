@@ -12,7 +12,7 @@ These scripts are short and usually accomplish only a single task.
 ## ✈️ Other Locations
 
  - [GitHub Repository](https://github.com/YelloNolo/Browser-Scripts)
- - [Greasy Fork - ravenwood](https://github.com/YelloNolo/Browser-Scripts)
+ - [Greasy Fork - ravenwood](https://greasyfork.org/en/scripts/485601-ravenwood-quality-of-life)
 
 
 ## 😀 Thanks
