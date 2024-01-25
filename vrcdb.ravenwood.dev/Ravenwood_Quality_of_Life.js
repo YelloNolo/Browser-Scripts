@@ -2,7 +2,7 @@
 // @name         Ravenwood Quality of Life
 // @description  Small changes to make the experience of using "vrcdb.ravenwood.dev" a little better.
 // @author       YelloNolo
-// @version      0.2
+// @version      0.3
 // @date         2024-1-24
 // @namespace    https://yello.zip
 // @homepage     https://github.com/YelloNolo/YouTube-Adblock
@@ -15,12 +15,17 @@
 
     const imageSelector =
         "div.d-flex.flex-column.justify-content-end.justify-content-sm-end.justify-content-md-end.justify-content-xxl-end.align-items-xxl-start";
+    const textShadowSelector =
+        'h1[style*="text-shadow: rgb(0, 0, 0) 0px 0px 11px"]';
 
     function removeBlur(element) {
         element.style.backdropFilter = "none";
     }
     function imageExpand(element) {
         element.style.height = "100%";
+    }
+    function textShadowRemove(element) {
+        element.style.textShadow = "none";
     }
 
     function handleMutations(mutationsList, observer) {
@@ -32,13 +37,19 @@
                         const blurElement = element.querySelector(
                             'div[style*="backdrop-filter: blur(5px) grayscale(0%)"]'
                         );
+                        const textShadowElement =
+                            element.querySelector(textShadowSelector);
                         const imageElement =
                             element.querySelector(imageSelector);
+
                         if (blurElement) {
                             removeBlur(blurElement);
                         }
                         if (imageElement) {
                             imageExpand(imageElement);
+                        }
+                        if (textShadowElement) {
+                            textShadowRemove(textShadowElement);
                         }
                     }
                 });
