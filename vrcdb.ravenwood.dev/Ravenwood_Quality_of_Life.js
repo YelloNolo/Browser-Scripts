@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Ravenwood Quality of Life
 // @description  Small changes to make the experience of using "vrcdb.ravenwood.dev" a little better.
-// @author       YelloNolo
+// @author       YelloNox
 // @version      0.3
 // @date         2024-1-24
 // @namespace    https://yello.zip
-// @homepage     https://github.com/YelloNolo/YouTube-Adblock
+// @homepage     https://github.com/YelloNox/asuratoon-dl
 // @match        *://vrcdb.ravenwood.dev/*
 // @grant        none
 // ==/UserScript==
